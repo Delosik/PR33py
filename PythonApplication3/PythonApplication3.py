@@ -31,13 +31,17 @@ print((X+M)%60)
 A = int(input())
 B = int(input())
 H = int(input())
-A <= B
-if A <= H <=B:
-    print('Это нормально')
-elif H < A:
+while A > B:
+    print('Неккоректные данные')
+    A = int(input())
+    B = int(input())
+    H = int(input())
+if H<A:
     print('Недосып')
 elif H > B:
     print('Пересып')
+else:
+    print('Это нормально')
 
 #7
 year = int(input())
